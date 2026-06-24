@@ -16,7 +16,7 @@ resource "aws_security_group_rule" "user_ingress_rule" {
     source_security_group_id = data.aws_ssm_parameter.backend_alb_sg_id.value
 }
 
-resource "aws_security_group-rule" "cart_ingress_rule" {
+resource "aws_security_group_rule" "cart_ingress_rule" {
     type = "ingress" 
     from_port = 8080
     to_port = 8080
@@ -25,7 +25,7 @@ resource "aws_security_group-rule" "cart_ingress_rule" {
     source_security_group_id = data.aws_ssm_parameter.backend_alb_sg_id.value
 }
 
-resource "aws_security_group-rule" "shipping_ingress_rule" {
+resource "aws_security_group_rule" "shipping_ingress_rule" {
     type = "ingress" 
     from_port = 8080
     to_port = 8080
@@ -34,7 +34,7 @@ resource "aws_security_group-rule" "shipping_ingress_rule" {
     source_security_group_id = data.aws_ssm_parameter.backend_alb_sg_id.value
 }
 
-resource "aws_security_group-rule" "payment_ingress_rule" {
+resource "aws_security_group_rule" "payment_ingress_rule" {
     type = "ingress" 
     from_port = 8080
     to_port = 8080
